@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+    <title>hyper</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<div class="header">
+    
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href=""><span id="logo">hyper</span></a>
+
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-selected"><span id="version" class="numeric-font">v0.0.0</span></li>
+            <!-- <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tour</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sign Up</a></li> -->
+        </ul>
+    </div>
+</div>
+
+<div class="splash-container">
+    <div class="splash">
+        <!-- <h1 class="splash-head">Big Bold Text</h1>
+        <p class="splash-subhead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p> -->
+        <div class="full-width">
+            <div class="pure-g">
+                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                    <img width="360" id="img" class="pure-img-responsive" src="{{ url_for('static', filename='images/main.png') }}">
+                </div>
+                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                    <!-- <span id="mega-title" class="title-text">Do More</span>
+                    <div class="full-width redbox">
+                        <p class="title-text">Life Gamified.</p>
+                    </div>
+                    <div class="full-width redbox">
+                        <p class="title-text">Performance Amplified.</p>
+                    </div> -->
+                    <div class='headline-container'>
+                        <span class='headline'>
+                            Get<br>
+                            hyper
+                        </span><br>
+                        <div class='underline'></div>
+                    </div>
+                    <div class="cta-container">
+                        <a href="#" class="cta cta-small" id="cta-1">Get Hyper</a>
+                        <a href="#" class="cta cta-big" id="cta-1">
+                            <span class="material-icons">play_for_work</span>
+                        </a>
+                        <a href="#learnmore" class="cta" id="cta-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-wrapper">
+    <a name="learnmore"></a>
+    <div class="sticky-head numeric-font">
+        <marquee direction="right">COMING SOON 2021</marquee>
+    </div>
+    <div class="ribbon l-box-lrg pure-g">
+        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+            <img width="300" class="pure-img-responsive" src="{{ url_for('static', filename='images/sign-in-screen.png') }}">
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+            <h2 class="content-head content-head-ribbon"><span class="step-number">1</span> Get hyper</h2>
+
+            <p class="subtext">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor.
+            </p>
+        </div>
+    </div>
+
+    <div class="ribbon l-box-lrg pure-g">
+        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+            <img width="300" class="pure-img-responsive" src="{{ url_for('static', filename='images/task-card.jpg') }}">
+            <img width="300" class="pure-img-responsive" src="{{ url_for('static', filename='images/reward-card.jpg') }}">
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+            <h2 class="content-head content-head-ribbon"><span class="step-number">2</span> Activities</h2>
+
+            <p class="subtext">
+                Set up activities such as daily tasks, punishments and rewards. 
+                Customize your activities with bonuses and penalties to enforce an incentive structure unique to your lifestyle.
+                Get rewarded for being productive, executing and reaching your goals.
+            </p>
+        </div>
+    </div>
+
+    <div class="ribbon l-box-lrg pure-g">
+        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+            <img width="300" class="pure-img-responsive" src="{{ url_for('static', filename='images/bonus-screen.png') }}">
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+            <h2 class="content-head content-head-ribbon"><span class="step-number">3</span> Customize</h2>
+
+            <p class="subtext">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor.
+            </p>
+        </div>
+    </div>
+
+    <div class="ribbon l-box-lrg pure-g">
+        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+            <img width="320" class="pure-img-responsive" src="{{ url_for('static', filename='images/log.jpg') }}">
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+            <h2 class="content-head content-head-ribbon"><span class="step-number">4</span> Start Doing</h2>
+
+            <p class="subtext">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor.
+            </p>
+        </div>
+    </div>
+
+    <div class="ribbon l-box-lrg pure-g">
+        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+            <img width="250" class="pure-img-responsive" src="{{ url_for('static', filename='images/daily-score.jpg') }}"><br>
+            <img width="320" class="pure-img-responsive" src="{{ url_for('static', filename='images/net-score.jpg') }}">
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+            <h2 class="content-head content-head-ribbon content-head-left"><span class="step-number">5</span> Gain Insights</h2>
+
+            <p class="subtext">
+                Log your activities to gain and spend points. <br>
+                Track daily score, weekly trends and point streaks. <br>
+                Get insights on activity performance and get a better understanding of your lifestyle.
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- <h2 class="content-head is-center">Excepteur sint occaecat cupidatat.</h2> -->
+        <div class='headline-container-2'>
+            <span class='headline'>
+                Coming Soon!
+            </span><br>
+            <div class='underline underline-colored'></div>
+        </div>
+        <br>
+
+        <div class="ribbon l-box-lrg pure-g">
+            <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+                <img width="300" class="pure-img-responsive" src="{{ url_for('static', filename='images/group-screen.png') }}">
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+    
+                <h2 class="content-head content-head-ribbon content-head-left">Collaboration & Competition</h2>
+    
+                <p class="subtext">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor.
+                </p>
+            </div>
+        </div>
+
+        <div class="ribbon l-box-lrg pure-g">
+            <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+                <img width="320" class="pure-img-responsive" src="{{ url_for('static', filename='images/milestones.png') }}">
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+    
+                <h2 class="content-head content-head-ribbon content-head-left">Goals and Milestones</h2>
+    
+                <p class="subtext">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor.
+                </p>
+            </div>
+        </div>
+
+        <div class="ribbon l-box-lrg pure-g">
+            <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+                <img width="300" class="pure-img-responsive" src="{{ url_for('static', filename='images/intelligence-screen.png') }}">
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+    
+                <h2 class="content-head content-head-ribbon content-head-left">AI Powered Insights & Recommendations</h2>
+                <p class="subtext">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="content">
+        <!-- <h2 class="content-head is-center">Dolore magna aliqua. Uis aute irure.</h2>
+
+        <div class="pure-g">
+            <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+                <form class="pure-form pure-form-stacked">
+                    <fieldset>
+
+                        <label for="name">Your Name</label>
+                        <input id="name" type="text" placeholder="Your Name">
+
+
+                        <label for="email">Your Email</label>
+                        <input id="email" type="email" placeholder="Your Email">
+
+                        <label for="password">Your Password</label>
+                        <input id="password" type="password" placeholder="Your Password">
+
+                        <button type="submit" class="pure-button">Sign Up</button>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+                <h4>Contact Us</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </p>
+
+                <h4>More Information</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div> -->
+
+    </div>
+
+    <div class="footer l-box is-center">
+        hyper 2020
+    </div>
+
+</div>
+
+</body>
+</html>
